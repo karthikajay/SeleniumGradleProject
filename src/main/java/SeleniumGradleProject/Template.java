@@ -18,10 +18,10 @@ public abstract class Template {
 		
 	
 
-	public abstract void testMethod();
+	public abstract void testMethod() throws InterruptedException;
 
 	@Test
-	public void executeTest() {
+	public void executeTest() throws InterruptedException {
 		testMethod();
 	}
 
@@ -40,7 +40,7 @@ public abstract class Template {
 	@AfterTest
 	public void logout() throws InterruptedException {
 	TimeUnit.SECONDS.sleep(5);
-		driver.quit();
+		//driver.quit();
 	}
 
 }

@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-21T01:38:31Z" name="Default suite" finished-at="2021-01-21T01:38:43Z" duration-ms="12151">
+  <suite started-at="2021-01-22T04:10:18Z" name="Default suite" finished-at="2021-01-22T04:10:35Z" duration-ms="16762">
     <groups>
     </groups>
-    <test started-at="2021-01-21T01:38:31Z" name="Default test" finished-at="2021-01-21T01:38:43Z" duration-ms="12151">
+    <test started-at="2021-01-22T04:10:18Z" name="Default test" finished-at="2021-01-22T04:10:35Z" duration-ms="16762">
       <class name="SeleniumGradleProject.TestCase001">
-        <test-method is-config="true" signature="login()[pri:0, instance:SeleniumGradleProject.TestCase001@75d2da2d]" started-at="2021-01-21T01:38:31Z" name="login" finished-at="2021-01-21T01:38:37Z" duration-ms="6030" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:SeleniumGradleProject.TestCase001@6057aebb]" started-at="2021-01-22T04:10:18Z" name="login" finished-at="2021-01-22T04:10:24Z" duration-ms="5889" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="executeTest()[pri:0, instance:SeleniumGradleProject.TestCase001@75d2da2d]" started-at="2021-01-21T01:38:37Z" name="executeTest" finished-at="2021-01-21T01:38:37Z" duration-ms="14" status="PASS">
+        <test-method signature="executeTest()[pri:0, instance:SeleniumGradleProject.TestCase001@6057aebb]" started-at="2021-01-22T04:10:24Z" name="executeTest" finished-at="2021-01-22T04:10:30Z" duration-ms="5840" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:SeleniumGradleProject.TestCase001@75d2da2d]" started-at="2021-01-21T01:38:37Z" name="logout" finished-at="2021-01-21T01:38:43Z" duration-ms="6049" status="PASS">
+        <test-method is-config="true" signature="logout()[pri:0, instance:SeleniumGradleProject.TestCase001@6057aebb]" started-at="2021-01-22T04:10:30Z" name="logout" finished-at="2021-01-22T04:10:35Z" duration-ms="5003" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
