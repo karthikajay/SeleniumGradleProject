@@ -34,7 +34,7 @@ public abstract class Template {
 		driver=new ChromeDriver(options);
 		
 		
-		driver.get("https://www.facebook.com");
+		driver.get("http://demo.guru99.com/test/delete_customer.php");
 	}
 	
 	@AfterTest
