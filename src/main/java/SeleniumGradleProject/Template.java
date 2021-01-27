@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -15,6 +16,7 @@ public abstract class Template {
 		
 	
 	WebDriver driver;
+	WebDriverWait wait;
 		
 	
 
@@ -27,6 +29,7 @@ public abstract class Template {
 
 	@BeforeTest
 	public void login() {
+		
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options=new ChromeOptions();
 		options.addArguments("--disble-notifications");
@@ -34,7 +37,7 @@ public abstract class Template {
 		driver=new ChromeDriver(options);
 		
 		
-		driver.get("http://demo.guru99.com/test/delete_customer.php");
+		driver.get("http://demo.guru99.com/popup.php");
 	}
 	
 	@AfterTest
