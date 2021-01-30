@@ -7,9 +7,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
+import com.relevantcodes.extentreports.LogStatus;
+
 public class SampleAlerts extends Template {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		
 		SampleAlerts obj= new SampleAlerts();
@@ -18,7 +20,7 @@ public class SampleAlerts extends Template {
 	}
 
 	@Override
-	public void testMethod() throws InterruptedException {
+	public void testMethod() throws Exception {
 
 		try {
 			
@@ -33,6 +35,9 @@ public class SampleAlerts extends Template {
 		WebElement submit=driver.findElement(By.xpath("//td[text()='Customer ID']//following::input[2]"));
 		submit.click();
 		
+		test.log(LogStatus.INFO, "Submit button is clicked");
+		Screenshot.saveScreenShot(driver, test);
+		
 		TimeUnit.SECONDS.sleep(3);
 		
 		Alert alert=driver.switchTo().alert();
@@ -43,6 +48,8 @@ public class SampleAlerts extends Template {
 		
 		//to verify the value of alert
 		Assert.assertEquals("Do you really want to delete this Customer?",expected);
+		test.log(LogStatus.PASS, "Do you really want to delete this Customer? is present");
+		Screenshot.saveScreenShot(driver, test);
 		
 		//to verify the value of alert
 		Assert.assertNotEquals("Do you really want to delete this Customer",expected);
@@ -53,6 +60,8 @@ public class SampleAlerts extends Template {
 		driver.switchTo().defaultContent();
 		}catch(AssertionError e) {
 			System.out.println("Exception occured is:" +e);
+			test.log(LogStatus.FAIL, "Assertion id failed");
+			Screenshot.saveScreenShot(driver, test);
 			
 		}catch(Exception e) {
 			System.out.println("Exception occured is:" +e);
