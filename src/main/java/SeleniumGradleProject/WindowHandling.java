@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 
 public class WindowHandling extends Template{
 //main method
+	//main2
 	public static void main(String[] args) throws InterruptedException {
 		WindowHandling obj=new WindowHandling();
 		obj.testMethod();
